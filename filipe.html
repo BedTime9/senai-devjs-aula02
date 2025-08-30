@@ -16,30 +16,101 @@
         }
 
         header {
-            padding: 20px;
-            background-color: #c5c5c5
+            padding: 3em;
+            animation: HeaderMuda 5s infinite alternate;
         }
 
+            @keyframes HeaderMuda {
+                from {background-color: #8fd6ff;}
+                to {background-color: #a3cbff}
+            }
+
+        
+
         header > h1 {
+            color: #ffffff;
+            text-align: center;
             font-size: 2em;
             font-style: light;
         }
 
-        li {
-            padding: 5px;
+        #container {
+            border-radius: 4px;
         }
+
+        #sobre-mim {
+            display: flex;
+            flex: 2;
+            padding: 20px;
+            margin: 20px;
+            margin-top: 5em;
+            
+        }
+
+        #sobre-mim > div {
+            padding: 20px;
+            transition: 0.5s;
+        }
+
+            #sobre-mim > div:hover {
+                background-color: #ececec;
+                scale: 1.05;
+            }
+
+            #nome {
+                padding: 20px;
+                margin-right: 5em;
+            }
+
+            #afazeres {
+                margin-left: 5em;
+            }
+
+        #separação {
+            text-align: center;
+            margin: 5em;
+        }
+
+        #hobbies {
+            display: inline-block;
+            padding: 20px;
+            transition: 0.5s;
+        }
+
+        #hobbies:hover {
+            background-color: #ececec;
+            scale: 1.05;
+        }
+
+
+
+
     </style>
 </head>
 <body>
     <header>
         <h1> Portfólio sobre mim. </h1>
     </header>
-        <ul>
-            <li> Meu nome é Filipe Muniz Bento. </li>
-            <li> Não trabalho, mas estudo programação. </li>
-            <li> Estou no 2° ano do E.M (Ensino Médio). </li>
-            <li> Gosto de jogar, ler, estudar tópicos diversos, entre outros.</li>
-        </ul>
+    <main id="container">
+        <div id="sobre-mim">
+        <div id="nome">
+            <h3>Meu nome</h3>
+            <p> Meu nome é Filipe Muniz Bento.</p>
+        </div>
+        <div id="afazeres">
+            <h3>O que eu faço</h3>
+            <p>Estou no Ensino Medio e estudo programação,<br> além das matérias curriculares.</p>
+        </div>
+    </div>
+
+        <div id="separação">
+            <div id="hobbies">
+                <h3> Meus hobbies</h3>
+                <p>Gosto de jogar, ler, programar, aprender coisas novas.</p>
+            </div>
+        </div>
+    </main>
+    
     </h1>
 </body>
 </html>
